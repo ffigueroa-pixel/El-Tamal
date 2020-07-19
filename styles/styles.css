@@ -1,0 +1,364 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	margin:0px;
+	background-color: #FFFFCC;
+}
+
+header {
+	background-color: #67481C;
+	height: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+/*----------------------Estilo del navegador-----------------------*/
+
+nav {
+	text-align: center;
+	font-family: 'Bebas Neue';
+	font-weight: 200;
+	font-size: 20px;
+	margin: auto;
+	width: 1000px;
+}
+
+.menu ul {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+}
+
+.link {
+	color: #D37F46;
+	text-decoration: none;
+}
+
+/*-----------------------------VARIABLES---------------------------------*/
+
+
+
+/*-----------------------Estilo del banner-------------------------*/
+
+#banner {
+	text-align: center;
+	font-family: 'Lily Script One';
+	line-height: 4px;
+	background-color: #FFFFCC;
+}
+
+.banner-container {
+	margin: auto;
+	width: 450px;
+	display: flex;
+	align-items: center;
+}
+
+.banner-container-tittle {
+	width: 300px;
+
+}
+
+.banner-img img {
+	height: 150px;
+}
+
+.banner-container h4 {
+	text-align: left;
+	font-size: 60px;
+	font-weight: 600;
+}
+
+.banner-container h1 {
+	font-size: 100px;
+	font-weight: 100;
+	text-decoration: underline;
+}
+
+.banner-container h6 {
+	font-family: 'Roboto Mono' ;
+	font-size: 15px;
+	text-align: right;
+}
+/*-----------------Estilo de los titulares---------------------*/
+.news-week {
+	text-align:center;
+}
+
+.news-weekWrapper-C{
+	margin: auto;
+	display: flex;
+	width: 1000px;
+}
+
+.news-weekWrapper h2{
+	font-family: 'Bebas Neue';
+	font-size: 40px;
+	color: #CA5D42;
+}
+
+.news-week-sides {
+	width:600px;
+	margin: 10px;
+}
+
+.news-week-sides h3{
+	font-family: 'Fjalla One';
+	font-size: 21px;
+	color: #D37F46;
+	margin: 0;
+}
+
+.news-week-container{
+	margin: 10px;
+}
+
+.news-week-head {
+	background-color: #67481C;
+	border-radius: 10px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-week-head:hover {
+	border: #D37F46 3px solid;
+}
+
+.news-week-description {
+	font-family: 'Roboto Mono';
+	background-color: #FFED83;
+	height: 200px;
+	overflow: hidden;
+	margin: 10px;
+	margin-top: 0;
+	border-radius: 0px 0px 20px 0px;
+	text-align: left;
+	padding: 10px;
+}
+
+/*------------------------Estilo de Cards----------------------------*/
+
+.cards-cont {
+	text-align: center;
+	padding: 40px;
+	width: 1000px;
+	margin: auto;
+	display: flex;
+}
+
+.card {
+	background-color: #FFED83;
+	width: 350px;
+	margin: 10px;
+	height: 380px;
+	border-radius: 8px;
+}
+
+.card:hover{
+	border: #CA5D42 3px solid;
+}
+
+.card-tittle-container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-tittle-container:hover{
+	background-color: #CA5D42;
+}
+
+.card-tittle {
+	font-family: 'Bebas Neue';
+	color: #D37F46;
+	margin: 0;
+}
+
+.card-tittle:hover{
+	color: #FFED83;
+	font-weight: 300;
+}
+
+.card-description {
+	font-family:'Roboto Mono';
+	font-size: 13px;
+	margin: 20px 15px;
+	height: 250px;
+	padding: 0px 5px;
+	overflow: hidden;
+	text-align: left;
+
+}
+
+.card-url{
+	border: 1px solid #FFED83;
+	border-radius: 10px;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #D37F46;
+}
+
+/*---------------------------Articulos-----------------------------*/
+
+.nota-container{
+	width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.nota-wrap {
+	width: 700px;
+	margin-bottom: 30px;
+}
+
+.nota-wrap-tittle {
+	font-family: 'Bebas Neue';
+	font-size: 30px;
+	color: #CA5D42;
+	text-align: center;
+}
+
+.nota-wrap-description {
+	font-family: 'Roboto Mono';
+	background-color: #FFED83;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.nota-wrap-credits {
+	width: 300px;
+	margin-right: auto;
+	text-align: left;
+}
+
+.nota-wrap-credits h3 {
+	font-family: 'Bebas Neue';
+	font-weight: 100;
+	margin: 0;
+}
+
+.nota-wrap-credits h4 {
+	font-family: 'Fjalla One';
+	font-weight: 200;
+	margin: 0;
+	color: #CA5D42;
+}
+
+.side-more {
+	width: 250px;
+	padding-top: 40px;
+}
+
+.side-more-card {
+	height: 300px;
+	background-color: #67481C;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+.side-card-tittle {
+	color: #D37F46;
+	height: 70px;
+	width: 225px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.side-card-tittle h3 {
+	font-family: 'Bebas Neue';
+	margin: 0;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+.side-card-description {
+	height: 200px;
+	width: 225px;
+	padding: 0px 5px;
+	margin: auto;
+	background-color: #FFED83;
+	border-radius: 5px;
+	font-family: 'Roboto Mono';
+	font-size: small;
+	overflow: hidden;
+}
+
+/* -------------------------stilos menu------------------------- */
+.banner-article-sec {
+	height: 200px;
+	width: 1000px;
+}
+
+.banner-article-sec h1{
+	text-align: left;
+}
+
+.menu-tittle-nav h2{
+	margin-top: 0px;
+	text-align: left;
+}
+
+.menu-tittle-nav h2:hover{
+	text-align: center;
+	cursor: pointer;
+	background-color: #67481C;
+	color: #D37F46;
+}
+
+.post-article-sec {
+	margin-top: 30px;
+	padding: 20px 30px;
+	height: 300px;
+}
+
+.article-sec-col {
+	display: flex;
+	align-items: center;
+}
+.article-sec-col-side{
+	padding-right: 10px;
+}
+
+.article-sec-col img{
+	height: 150px;
+	width: 220px;
+}
+
+
+/*---------------------------Footer-----------------------------*/
+
+footer {
+	background-color: #67481C;
+	height: 80px;
+	font-family: 'Bebas Neue';
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.social-links a{
+	color: #FFED83;
+	margin: 5px;
+	font-size: 40px;
+}
