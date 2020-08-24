@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/*---------------------------- vars---------------------------- */
+:root {
+	--white-color: white;
+	--middlewhite-color: #ffffe2;
+	--black-color: black;
+	--red-color: #CA5D42;
+	--yellow-color: #FFFFCC;
+	--yellow-s-color: #FFED83;
+	--orange-color: #D37F46;
+	--orange-wtp: #ffd8abd4;
+	--texto-articuloso-d: 'EB Garamond';
+	--texto-head: 'Lily Script One';
+	--texto-upper: 'Bebas Neue';
+	--texto-mech: 'Roboto Mono';
+	--texto-credits: 'Fjalla One';
+}
+
+/* -------------------------globales------------------------- */
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	margin:0px;
+	background-color: var(--red-color);
+}
+
+header {
+	background-color: var(--black-color);
+	height: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+/*----------------------Estilo del navegador-----------------------*/
+
+nav {
+	text-align: center;
+	font-family: var(--texto-upper);
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin: auto;
+	width: 1000px;
+}
+
+.menu ul {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+}
+
+.link {
+	color: var(--middlewhite-color);
+	text-decoration: none;
+}
+
+
+/*-----------------------Estilo del banner-------------------------*/
+
+.nota-container {
+	width: 1000px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-column-gap: 20px;
+	margin-bottom: 30px;
+}
+
+.side-more {
+	display: grid;
+	grid-template-rows: 350px 350px;
+	grid-row-gap: 20px;
+}
+
+.nota-wrap {
+	display: grid;
+	grid-template-rows: auto;
+}
+
+.nota-wrap-tittle {
+	font-family: var(--texto-upper);
+	font-size: 30px;
+	color: var(--yellow-color);
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 2px;
+}
+
+.nota-wrap-description {
+	display: grid;
+	grid-template-rows: 50px;
+	font-family: var(--texto-articuloso-d);
+	background-color: var(--yellow-color);
+	padding: 25px;
+	border-radius: 10px;	
+}
+
+.nota-wrap-credits {
+	width: 300px;
+	margin-right: auto;
+	text-align: left;
+}
+
+.nota-wrap-credits h3 {
+	font-family: var(--texto-upper);
+	font-weight: 100;
+	margin: 0;
+}
+
+.nota-wrap-credits h4 {
+	font-family: var(--texto-credits);
+	font-weight: 200;
+	margin: 0;
+	color: var(--red-color);
+}
+
+.side-more {
+	margin-top: 50px;
+}
+
+.side-more-card {
+	display: grid;
+	grid-template-rows: 70px;
+	background-color: var(--orange-wtp);
+}
+
+.side-card-tittle {
+	color: var(--red-color);
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.side-card-tittle h3 {
+	font-family: var(--texto-upper);
+	margin: 0;
+	font-weight: 200;
+}
+
+.side-card-description {
+	height: 200px;
+	width: 260px;
+	padding: 0px 5px;
+	margin: auto;
+	background-color: var(--yellow-color);
+	font-family: var(--texto-articuloso-d);
+	font-size: small;
+	overflow: hidden;
+}
+/*---------------------------Footer-----------------------------*/
+
+footer {
+	background-color: var(--black-color);
+	height: 80px;
+	font-family: var(--texto-upper);
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	color: var(--middlewhite-color);
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.social-links a{
+	color: var(--middlewhite-color);
+	margin: 5px;
+	font-size: 40px;
+}
