@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellota+Text:wght@700&family=Fjalla+One&family=Lily+Script+One&family=Roboto+Mono:wght@300&display=swap');
+
 /*---------------------------- vars---------------------------- */
 :root {
 	--white-color: white;
@@ -45,7 +47,8 @@ nav {
 	font-size: 20px;
 	letter-spacing: 1px;
 	margin: auto;
-	width: 1000px;
+	max-width: 1000px;
+	flex: 1;
 }
 
 .menu ul {
@@ -68,7 +71,6 @@ nav {
 
 .banner {
 	text-align: center;
-	height: 300px;
 	font-family: var(--texto-head);
 	line-height: 4px;
 	background-color: var(--yellow-color);
@@ -76,9 +78,10 @@ nav {
 
 .banner-container {
 	margin: auto;
-	width: 450px;
+	max-width: 500px;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .banner-container-tittle {
@@ -108,14 +111,22 @@ nav {
 	text-align: right;
 }
 /*-----------------Estilo de los titulares---------------------*/
+main .week-c{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
 .news-week {
-	text-align:center;
+	display: grid;
+	grid-template-rows: auto;
 }
 
 .news-weekWrapper-C{
 	margin: auto;
-	display: flex;
-	width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+
 }
 
 .news-weekWrapper h2{
@@ -125,9 +136,10 @@ nav {
 	color: var(--yellow-color);
 }
 
-.news-week-sides {
-	width:600px;
-	margin: 10px;
+.news-week-sides{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 10px;
 }
 
 .news-week-sides h3{
@@ -147,8 +159,7 @@ nav {
 }
 
 .news-week-container{
-	margin: 10px;
-	width: 480px;
+	width: 100%;
 }
 
 .news-week-head {
@@ -161,7 +172,6 @@ nav {
 	justify-content: center;
 
 }
-
 
 .news-week-description {
 	font-family: var(--texto-articuloso-d);
@@ -179,27 +189,30 @@ nav {
 
 .cards-cont {
 	text-align: center;
-	padding: 40px;
-	width: 1000px;
+	max-width: 1000px;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card {
 	background-color: var(--yellow-color);
-	width: 350px;
+	width: 200px;
 	margin: 10px;
-	height: 300px;
+	max-height: 300px;
 	border-radius: 8px;
 	overflow: hidden;
+	display: grid;
+	grid-template-rows: auto;
 }
 
 .card:hover{
 	border: var(--red-color) 3px solid;
+	cursor: pointer;
 }
 
 .card-tittle-container {
-	height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -213,7 +226,7 @@ nav {
 .card-tittle {
 	font-family: var(--texto-upper);
 	color: var(--orange-color);
-	margin: 0;
+	margin: 10px 0;
 }
 
 .card-tittle:hover{
@@ -225,8 +238,6 @@ nav {
 	font-family: var(--texto-articuloso-d);
 	font-size: 15px;
 	margin: 20px 15px;
-	height: 250px;
-	padding: 0px 5px;
 	overflow: hidden;
 	text-align: left;
 
@@ -234,7 +245,7 @@ nav {
 /*---------------------------Articulos-----------------------------*/
 
 .nota-container {
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 70% 25%;
@@ -399,13 +410,12 @@ footer {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	position: relative;
 	margin-bottom: 0;
 	color: var(--middlewhite-color);
 }
 
 .container {
-	width: 1000px;
+	max-width: 1000px;
 	margin: auto;
 	text-align: center;
 }
@@ -427,4 +437,44 @@ small{
 
 small a{
 	color: var(--middlewhite-color);
+}
+
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 767px){
+	header{
+		height: auto;
+	}
+	
+	.menu ul{
+		display: initial;
+		height: auto;
+	}
+	.news-weekWrapper{
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+	.news-weekWrapper-C{
+		grid-template-columns: 1fr;
+		grid-row-gap: 10px;
+	}
+	.news-week-container{
+		font-size: 15px;
+	}
+	.news-week-head h3{
+		font-size: 1.3em;
+	}
+	.news-week-description{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 320px){
+
 }
