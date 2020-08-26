@@ -189,16 +189,16 @@ main .week-c{
 
 .cards-cont {
 	text-align: center;
-	max-width: 1000px;
+	max-width: 900px;
 	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
+	margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	justify-content: center;
 }
 
 .card {
 	background-color: var(--yellow-color);
-	width: 200px;
 	margin: 10px;
 	max-height: 300px;
 	border-radius: 8px;
@@ -249,7 +249,7 @@ main .week-c{
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 70% 25%;
-	grid-column-gap: 30px;
+	grid-column-gap: 5%;
 	margin-bottom: 30px;
 }
 
@@ -356,6 +356,7 @@ main .week-c{
 	justify-content: center;
 	align-items: center;
 	background-color: var(--yellow-color);
+	text-align: center;
 }
 
 .banner-article-sec h1{
@@ -400,7 +401,81 @@ main .week-c{
 	text-align: left;
 	padding: 0 20px;
 }
+/*-----------------------literatura y arte-----------------------*/
+.container-lit{
+	grid-template-columns: 60%;
+	justify-content: center;
+}
 
+.literatura{
+	text-align: center;
+}
+.container-lit .menu-section:hover{
+	border: var(--red-color) 3px solid;;
+}
+
+.literatura h2{
+	font-size: 30px;
+	font-weight: 600px;
+}
+.literatura h2:hover{
+	color: var(--black-color);
+}
+.credits-lit h3{
+	font-family: var(--texto-credits);
+	font-weight: initial;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.credits-lit h4{
+	font-family: var(--texto-upper);
+	font-size: 20px;
+	font-weight: initial;
+	color: var(--orange-color);
+	margin-top: 0;
+}
+
+.poema-des pre{
+	font-family: var(--texto-articuloso-d);
+}
+.side-more-lit {
+    display: grid;
+	grid-template-rows: 150px 150px;
+	grid-row-gap: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.card-side-lit{
+	display: grid;
+	grid-template-rows: auto;
+	background-color: var(--yellow-color);
+	border-radius: 3%;
+}
+.card-side-tittle h2{
+	font-family: var(--texto-upper);
+	color: var(--red-color);
+	font-size: 30px;
+}
+
+.card-side-tittle h2:hover{
+	color: var(--black-color);
+}
+
+.credits-side-lit h3{
+	font-family: var(--texto-credits);
+	font-weight: initial;
+	color: var(--black-color);
+	margin: 0 auto;
+	font-size: 15px;
+}
+.credits-side-lit h4{
+	font-family: var(--texto-upper);
+	font-weight: initial;
+	color: var(--red-color);
+	margin-top: 0;
+}
 /*---------------------------Footer-----------------------------*/
 
 footer {
@@ -468,7 +543,12 @@ small a{
 		grid-column-gap: 1%;
 		justify-content: center;
 	}
-
+	.cards-cont {
+		grid-template-columns: 40% 40%;
+	}
+	.container-lit{
+		grid-template-columns: 70%;
+	}
 }
 
 @media screen and (max-width: 480px){
@@ -525,6 +605,30 @@ small a{
 		font-size: 0.8em;
 	}
 	
+	.cards-cont{
+		display: grid;
+		grid-template-columns: 70%;
+	}
+	.container-lit{
+		grid-template-columns: 90%;
+	}
+
+	.side-more-lit{
+		grid-template-columns: 80%;
+		justify-content: center;
+	}
+	.card-side-lit{
+		font-size: 16px;
+	}
+	.card-side-tittle h2{
+		font-size: 1.5em;
+	}
+	.credits-side-lit h3{
+		font-size: 0.8em;
+	}
+	.credits-side-lit h4{
+		font-size: 0.8em;
+	}
 }
 
 @media screen and (max-width: 320px){
